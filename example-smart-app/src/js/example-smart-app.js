@@ -66,6 +66,7 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
+          p.Temperature = getQuantityValueAndUnit(Temperature[0]);
 
           ret.resolve(p);
         });
@@ -90,6 +91,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+      Temperature: {value: ''},
     };
   }
 
@@ -133,6 +135,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+    $('#Temperature').html(p.Temperature);
   };
 
 })(window);
