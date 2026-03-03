@@ -20,7 +20,8 @@
                              // 'http://loinc.org|8480-6',
                               'http://loinc.org|2085-9', //HDL
                               'http://loinc.org|2089-1', //LDL
-                              'http://loinc.org|85354-9'] //blood pressure
+                              'http://loinc.org|85354-9', //BP
+                              'http://loinc.org|8310-5'] //Temperature
                       }
                     }
                   });
@@ -46,6 +47,7 @@
           var diastolicbp = getBloodPressureValue(byCodes('85354-9'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
+          var Temperature = byCodes('8310-5');                    
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
